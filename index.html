@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="calculator">
+               
+            <table>
+                <tr>
+                    <td colspan="3"><input type="text" placeholder="0" id="result" class="display" readonly></td>
+                    <td><button onclick="backspace()">&#9003</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displaycontent('7')">7</button></td>
+                    <td><button onclick="displaycontent('8')">8</button></td>
+                    <td><button onclick="displaycontent('9')">9</button></td>
+                    <td><button onclick="displaycontent('+')" class="btn">+</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displaycontent('4')">4</button></td>
+                    <td><button onclick="displaycontent('5')">5</button></td>
+                    <td><button onclick="displaycontent('6')">6</button></td>
+                    <td><button onclick="displaycontent('-')" class="btn">-</button></td>
+                </tr>
+                <tr>
+                    <td><button onclick="displaycontent('3')">3</button></td>
+                    <td><button onclick="displaycontent('2')">2</button></td>
+                    <td><button onclick="displaycontent('1')" >1</button></td>
+                    <td><button onclick="displaycontent('/')" class="btn">/</button></td>
+                </tr>
+                <tr>
+                    
+                    <td><button onclick="clearContent()" class="btn">AC</button></td>
+                    <td><button onclick="displaycontent('0')">0</button></td>
+                    <td><button onclick="calcOutput()" class="btn">=</button></td>
+                    <td><button onclick="displaycontent('*')" class="btn">x</button></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+<script src="./main.js"></script>
+</html>
